@@ -4,15 +4,6 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 async function Submit(information)
 {
-    await axios.post("http://localhost:8000/v1/auth/register",information)
-    .then((res)=>{ 
-        console.log(res);
-        
-    })
-    .catch((err)=>{
-        console.log(err);
-    })
-    console.log(information);
 };
 const Register = () => {
     const [information, setInformation] = useState({
